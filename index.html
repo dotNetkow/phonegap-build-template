@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+    <!-- Kendo UI Mobile styles for all supported platforms -->
+    <link href="http://cdn.kendostatic.com/2013.2.716/styles/kendo.mobile.all.min.css" rel="stylesheet">
+	<link href="styles/main.css" rel="stylesheet" /> <!-- This app's styles -->
+	
+    <script src="js/jquery.min.js"></script>
+    <!-- Kendo UI JavaScript -->
+    <script src="http://cdn.kendostatic.com/2013.2.716/js/kendo.all.min.js"></script>
+</head>
+<body>
+	<!-- Define each tab -->
+	<div data-role="view" id="tabstrip-home" data-title="Home">
+		<h1>Hello, World! App content goes here.</h1>
+	</div>
+	
+	<div data-role="view" id="tabstrip-activity" data-title="Activity" align="center">
+		<h1>...and here.</h1>
+	</div>
+	
+	<!-- Define the header and footer -->
+	<div data-role="layout" data-id="mobile-tabstrip">
+		<header data-role="header">
+			<div data-role="navbar">
+				<span data-role="view-title"></span>
+			</div>
+		</header>
+
+		<div data-role="footer">
+			<div data-role="tabstrip">
+				<a href="#tabstrip-home" data-icon="home">Home</a>
+				<a href="#tabstrip-activity" data-icon="toprated">Activity</a>
+			</div>
+		</div>
+	</div>
+	
+    <script>
+		// initialize kendo mobile app - only line needed to get started
+        var app = new kendo.mobile.Application(document.body, { transition: "slide", layout: "mobile-tabstrip" });
+		
+		// other init code:
+		
+    </script>
+</body>
+</html>
