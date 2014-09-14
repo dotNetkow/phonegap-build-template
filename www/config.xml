@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.website.appname" 
+        versionCode = "1" 
+        version     = "1.0.0">
+    <!-- 'Id' is your app's unique namespace -->
+    <!-- 'versionCode' is optional and Android only -->
+
+    <name>My App Name</name>
+
+    <description>
+        My app description.
+    </description>
+
+    <author href="http://www.website.com" email="email@email.com">
+        Your Name
+    </author>
+
+    <!-- The platforms to build for. Only build what you want to target! -->
+    <gap:platform name="ios" />
+	<gap:platform name="android" />
+	<gap:platform name="winphone" />
+	
+	<!-- Build preferences for each platform. Too many to list here, see online PhoneGap docs for more. -->
+	<preference name="phonegap-version" value="3.5.0" /> <!-- Version of PhoneGap to use -->
+	<!-- How long to display a splash screen on app open (in milliseconds) -->
+	<preference name="splash-screen-duration" value="3000" /> <!-- optional -->
+	
+	<!-- Icons -->
+	<icon src="icon.png" />  <!-- Icon in the root directory is always required, all others optional -->
+	<!-- iPhone / iPod Touch  -->
+	<icon src="icons/ios/57x57-App-Icon.png" gap:platform="ios" width="57" height="57" />
+	<icon src="icons/ios/60x60App-Icon.png" gap:platform="ios" width="60" height="60" />
+	<icon src="icons/ios/72x72-App-Icon.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icons/ios/114x114-App-Icon.png" gap:platform="ios" width="114" height="114" />
+	<icon src="icons/ios/120x120App-Icon.png" gap:platform="ios" width="120" height="120" />
+	
+	<!-- iPad -->
+	<icon src="icons/ios/76x76App-Icon.png" gap:platform="ios" width="76" height="76" />
+	<icon src="icons/ios/144x144App-Icon.png" gap:platform="ios" width="144" height="144" />
+	<icon src="icons/ios/152x152App-Icon.png" gap:platform="ios" width="152" height="152" />
+	
+	<!-- Android -->
+	<icon src="icons/android/36x36-Android-Icon-01.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icons/android/48x48-Android-Icon-01.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icons/android/72x72-Android-Icon-01.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/android/96x96-Android-Icon-01.png" gap:platform="android" gap:density="xhdpi" />
+	
+	<!-- Splash Screens - optional -->
+	<gap:splash src="splash.png" />
+	<gap:splash src="splash/ios/320X480-LAUNCH.png" gap:platform="ios" width="320" height="480" /> <!-- Regular iPhone4 -->
+	<gap:splash src="splash/ios/640X960-LAUNCH.png" gap:platform="ios" width="640" height="960" /> <!-- Retina iPhone4 -->
+	<gap:splash src="splash/ios/640x1136-Launch.png" gap:platform="ios" width="640" height="1136" /> <!-- iPhone5 -->
+	<gap:splash src="splash/ios/768-1004-LAUNCH-PORTRAIT.png" gap:platform="ios" width="768" height="1004" /> <!-- iPad Portrait -->
+	<gap:splash src="splash/ios/1024X748-LAUNCH-IPAD-LANDSCAPE.png" gap:platform="ios" width="1024" height="748" />
+	
+	<!-- retina iPad -->
+	<gap:splash src="splash/ios/1536X2008-LAUNCH-IPAD-PORTRAIT.png" gap:platform="ios" width="1536" height="2008" />
+	<gap:splash src="splash/ios/2048X1496-LAUNCH-IPAD-LANDSCAPE.png" gap:platform="ios" width="2048" height="1496" />
+	
+	<!-- Permissions required. See online PhoneGap docs for more. -->
+	<feature name="http://api.phonegap.com/1.0/network"/> <!-- Enable internet access permission -->
+
+	<!-- Plugins that enable device-specific native funtionality. See online docs for more -->
+	<gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />  <!-- For checking Internet connectivity -->
+	
+	<!-- Required to access external resources, like APIs and webpages. Wildcard (*) allows access to everything. -->
+	<access origin="*"/>
+</widget>

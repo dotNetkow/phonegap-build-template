@@ -1,0 +1,9 @@
+{
+    "lib": {
+        "www": {
+            "id": "com.company.appname",
+            "version": "0.0.1",
+            "uri": "https://github.com/phonegap/phonegap-app-hello-world/archive/3.4.0.tar.gz"
+        }
+    }
+}

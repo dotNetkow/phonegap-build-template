@@ -2,16 +2,36 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+
+	<!-- PG Build service injects this (do not include yourself!), but still need a reference here -->
+	<script src="phonegap.js"></script>
 
     <!-- Kendo UI Mobile styles for all supported platforms -->
     <link href="http://cdn.kendostatic.com/2013.2.716/styles/kendo.mobile.all.min.css" rel="stylesheet">
 	<link href="styles/main.css" rel="stylesheet" /> <!-- This app's styles -->
 	
-    <script src="js/jquery.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/phonegapAppPlugins.js"></script>
+    <script src="scripts/controller.js"></script>
+    <script src="scripts/dataRepository.js"></script>
+    <script src="scripts/viewModel.js"></script>
+
     <!-- Kendo UI JavaScript -->
     <script src="http://cdn.kendostatic.com/2013.2.716/js/kendo.all.min.js"></script>
+    <script type="text/javascript">
+			// PhoneGap is ready - begin using plugins here
+			function onDeviceReady() {
+				
+			}
+
+			function initialize() {
+				// register device ready event - called when PhoneGap is fully loaded
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+	</script>
 </head>
-<body>
+<body onload="initialize();">
 	<!-- Define each tab -->
 	<div data-role="view" id="tabstrip-home" data-title="Home">
 		<h1>Hello, World! App content goes here.</h1>
