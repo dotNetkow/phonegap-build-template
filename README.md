@@ -14,28 +14,29 @@ terms of use if used in a production application."
 * It will automatically be ready for use with the PhoneGap Developer App, a great tool that allows you to debug your app locally on a real device.  Each time you save a file from within this folder, the files get reloaded on the test device.  This is a lot faster than uploading to PhoneGap Build, waiting for the app to build, then reloading it!
 
 ## Make a Copy of the Template for Your App
-1. Create a new repository in your Git provider, such as "my-new-app".
-2. Starting in your root source code directory, make a bare clone of the PhoneGap Build Template repo:
+Create a new repository in your Git provider, such as "my-new-app".
+
+Starting in your root source code directory, make a bare clone of the PhoneGap Build Template repo:
 
 ```
 git clone --bare https://github.com/dotNetkow/phonegap-build-template
 ```
 
-3. Navigate into the newly created phonegap-build-template folder and mirror-push it to the new repo "my-new-app":
+Navigate into the newly created phonegap-build-template folder and mirror-push it to the new repo "my-new-app":
 
 ```
 cd phonegap-build-template
 git push --mirror https://github.com/yourUsername/my-new-app.git
 ```
 
-4. Remove the temporary local copy
+Remove the temporary local copy
 
 ```
 cd ..
 rm -rf phonegap-build-template
 ```
 
-5. Begin writing your app!
+Begin writing your app!
 
 ## Organization
 This project is organized in a clean, easy to follow directory structure. Additionally, it's ready for use with the [PhoneGap Developer App](http://app.phonegap.com) - develop locally then test on your mobile devices without the need for PhoneGap Build, app store certificates, etc. For more details, please [see post here](http://netkow.com/post/97489515860/open-source-phonegap-build-template-available) on my blog.
