@@ -92,11 +92,11 @@ window.appPlugins = window.appPlugins || {};
 		appPlugins.ga.trackEvent("Button", "Click", eventLabel, eventValue);
 	}
 
-	function successHandler() {
-		console.log("GA success: " + error);
+	function successHandler(success) {
+		console.log("GA success: " + success);
 	}
 
-	function errorHandler() {
+	function errorHandler(error) {
 		console.log("GA failure: " + error);
 	}
 }(window.appPlugins.ga = window.appPlugins.ga || {}));
